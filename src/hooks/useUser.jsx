@@ -1,5 +1,5 @@
 
-import { getSingleUser } from '../api/Auth';
+// import { getSingleUser } from '../api/Auth';
 import { useQuery } from '@tanstack/react-query';
 import { useSelector } from 'react-redux';
 
@@ -10,7 +10,7 @@ const useUser = () => {
         enabled: !!user?.email,
         queryKey : ['user'],
         queryFn : async () =>{
-            return await getSingleUser(user?.email);
+            // return await getSingleUser(user?.email);
         }
     })
 
